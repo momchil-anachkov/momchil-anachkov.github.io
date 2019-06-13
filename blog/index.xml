@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My personal blog</title>
-    <link>https://momchil-anachkov.github.io/blog/</link>
-    <description>Recent content on My personal blog</description>
+    <title>Blogs on My personal blog</title>
+    <link>https://momchil-anachkov.github.io/blog/blog/</link>
+    <description>Recent content in Blogs on My personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Jun 2019 12:06:35 +0300</lastBuildDate>
     
-	<atom:link href="https://momchil-anachkov.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://momchil-anachkov.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
