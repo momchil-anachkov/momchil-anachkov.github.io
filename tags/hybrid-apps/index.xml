@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hybrid Apps on Momchil Anachkov</title>
+    <link>/tags/hybrid-apps/</link>
+    <description>Recent content in Hybrid Apps on Momchil Anachkov</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/hybrid-apps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The story of a forex trading platform.</title>
+      <link>/project/forex-trading-platform/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/forex-trading-platform/</guid>
+      <description>
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;A client came to the company, where I was working at the time, and had a unique request. They had already successfully built a CFD trading website/platform and were looking for a few things we could provide. It was a great opportunity, both for the company, as well as our team, to grow and evolve.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s what they needed from us, the story of how each of these things came to be, the challenges we faced, how we overcame them, and in the end delivered a nice client experience.&lt;/p&gt;
+
+&lt;h2 id=&#34;supporting-the-already-established-code-base&#34;&gt;Supporting the already established code-base.&lt;/h2&gt;
+
+&lt;p&gt;The guys had already released the platform, but as with any software product, shipping is just half the battle. Once you get that large flow of users, you need a dedicated team to iron out issues, impossible to catch on a smaller testing scale. Our team was tasked with handling defect resolution, and in the meantime aligning the code-base with established best practices.&lt;/p&gt;
+
+&lt;p&gt;Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we&amp;rsquo;re talking about a large-scale project, such as a trading platform. Luckily we had solid experience with the technology stack used: Node.js, NPM, Grunt along with Angular.js. So after a couple of introductory weeks filled with onboarding regarding functional requirements, and another couple for getting acquainted with the project architecture, we were confident enough to start making refactoring, and stabilization changes, without too much worry about regressions. We were off to a great start.&lt;/p&gt;
+
+&lt;h2 id=&#34;developing-an-ios-and-android-app&#34;&gt;Developing an iOS and Android app&lt;/h2&gt;
+
+&lt;p&gt;In this day and age everyone&amp;rsquo;s time is quite valuable. People have so many things to keep track and take care of throughout the day. Many users want the ability to accomplish tasks on the go. This is partially the reason many website development strategies embrace the mobile-first approach. Because the stats (TODO: add stats) show that &lt;em&gt;most website traffic comes from mobile devices&lt;/em&gt;: tablets, phones and the like. This is exactly why our clients accurately deduced that they require a moblie version of their platform. And for a product that expects frequent use from single users, a dedicated iOS &amp;amp; Android app makes perfect sense.&lt;/p&gt;
+
+&lt;p&gt;So we took some time to research potential options. Let&amp;rsquo;s go over them.&lt;/p&gt;
+
+&lt;h4 id=&#34;developing-a-native-app-for-each-platform-one-in-swift-for-ios-one-in-java-for-android&#34;&gt;Developing a native App for each platform. One in Swift (for iOS), one in Java (for Android)&lt;/h4&gt;
+
+&lt;p&gt;Obviously the baseline approach was to write two applications. One for iDevice and one for Android users. This had a few hefty implications however.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Twice the codebase.&lt;/strong&gt; Every feature set would have to be implemented twice, tested twice, and maintained twice. While for a larger company this could be a potential option, due to the performance benefits of this approach, this large workload was something that would hevily affect tangible progress and the speed at which we could deliver.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform-specific team capability.&lt;/strong&gt; While we were well-versed in web development including many of it&amp;rsquo;s flavors, mobile app development was hardly our forte. We would have to dedicate additional time for knowledge aqcuisition, and learn on the go, and while this is &lt;em&gt;technically&lt;/em&gt; possible it would definitely affect deadlines and time-to-resolution in case of issues arising.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All in all, this route had some major drawbacks so we decided to keep looking for alternatives, hopefully finding something better suited.&lt;/p&gt;
+
+&lt;h4 id=&#34;turning-the-mobile-version-of-the-platform-into-a-progressive-web-app&#34;&gt;Turning the mobile version of the platform into a Progressive Web App&lt;/h4&gt;
+
+&lt;p&gt;Next we considered going the Progressive Web App route. However at the time of analysis PWAs were still a novel concept and quite immature. API support for things like geolocation, and the like was still not stable. Add the fact that Apple and Google were not on the same page, regarding feature set, and one could see why we dismissed what lay down that road.&lt;/p&gt;
+
+&lt;p&gt;So we keep looking&amp;hellip;&lt;/p&gt;
+
+&lt;h4 id=&#34;developing-a-hybrid-app&#34;&gt;Developing a hybrid app&lt;/h4&gt;
+
+&lt;p&gt;And in comes the saving grace. While at the time, there were, and still are some issues with things like Cordova, Ionic and the like, it was the best fit for our case. The mobile version of the trading platform was already written and stable (👏). This meant that we could for the most part just &lt;em&gt;wrap&lt;/em&gt; the existing platform and go from there. There were many benefits to this.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;This required minimal effort.&lt;/strong&gt; Relative to the native approach, the time that would be required to do this was miniscule. That meant that once we managed to package the web platform in a Cordova application we would have a stable base to move forward from.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We inherit all of the app design.&lt;/strong&gt; Already existing users wouldn&amp;rsquo;t have to learn a different UI to do the things they already knew how to do in their mobile workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Less code to maintain.&lt;/strong&gt; Since Cordova apps are in essence web pages, presented in a native web view. We could reuse the codebase throughout all the platforms. That means that there wouldn&amp;rsquo;t have to be seperate people maintaining the app for an Android and iOS device, and even more than that&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changes to the code would be reflected across all platforms.&lt;/strong&gt; Since we&amp;rsquo;re using the same code base, once we develop a new feature, or fix an existing issue, that change could be pushed everywhere. Users of one platform wouldn&amp;rsquo;t have to wait for updates, already available on another one. This was quite important as we already knew there was a &lt;a href=&#34;#redesigning-the-mobile-app-and-website&#34;&gt;design overhaul&lt;/a&gt; looming in the near future.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We were extremely happy to have found a development strategy and stack that was so promising for our use-case. 🥳 This was not to say that the implementation was simple. As anyone familiar with Cordova, knows there are rules you have to obey, as there are with any framework. There is a very specific project structure, that you have to follow, and that meant we had to rework parts of the already existing workflow so that all modules of the project can integrate successfuly and play nice with each other. Nevertheless after a few days of overview, analysis, and planning how the integration would play out, we started the restructuring process. After about a month of work, module by module we successfully integrated the platform into a working hybrid mobile application. 🚀&lt;/p&gt;
+
+&lt;p&gt;We were now ready to start working on feature requests!&lt;/p&gt;
+
+&lt;h2 id=&#34;redesigning-the-mobile-app-and-website&#34;&gt;Redesigning the mobile app and website&lt;/h2&gt;
+
+&lt;p&gt;While the platform was fully functional, along with the newly packaged mobile app, some time had passed, since release and as such the design had become a little outdated. And so they came to us with a request:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We a new design in the works and we would like you guys to work with us on it&amp;rsquo;s implementation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fantastic!&lt;/p&gt;
+
+&lt;p&gt;For about the next month we worked closely with our client&amp;rsquo;s designer to work out the details. As with any initial design, there were a few edge cases to iron out due to the dynamic nature of the app. I&amp;rsquo;m very happy to say that the redesign was quite successful and went very smoothly, and I&amp;rsquo;m also happy to share the end result of some of that work with you. Take a look below.&lt;/p&gt;
+
+&lt;div class=&#34;phone-gallery&#34;&gt;
+  &lt;div class=&#34;phone-gallery__content&#34;&gt;
+    
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;phone-1.jpg&#34; &gt;
+
+&lt;img src=&#34;phone-1.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+
+    
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;phone-2.jpg&#34; &gt;
+
+&lt;img src=&#34;phone-2.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+
+    
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;phone-3.jpg&#34; &gt;
+
+&lt;img src=&#34;phone-3.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+
+    
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;phone-4.jpg&#34; &gt;
+
+&lt;img src=&#34;phone-4.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+
+    
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;phone-5.jpg&#34; &gt;
+
+&lt;img src=&#34;phone-5.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+&lt;/figure&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And due to &lt;a href=&#34;#developing-a-hybrid-app&#34;&gt;our choice to go with a &lt;em&gt;hybrid app&lt;/em&gt; approach&lt;/a&gt; we could easily update all the platforms we were targeting: Android, iOS and Mobile.&lt;/p&gt;
+
+&lt;h2 id=&#34;adding-themes-functionality&#34;&gt;Adding Themes Functionality&lt;/h2&gt;
+
+&lt;p&gt;Staring at a screen all day inevitably puts strain on your eyes. And while a white, bright theme may be ok on your phone if you want to check or do something on the go, it is definitely lacking, when it comes to working, surrounded by multiple displays throughout the day. And so the guys came to us with another request.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We&amp;rsquo;d like our users to be able to customize the appearance of the platform to their needs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now obviously brand-specific colors would have to remain the same, but there was no reason a sort of &lt;em&gt;night mode&lt;/em&gt; couldn&amp;rsquo;t be implemented. So off we go! 🔥&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; or so we thought.&lt;/p&gt;
+
+&lt;p&gt;Sadly the UI of the platform was not developed with theming in mind. I&amp;rsquo;m sure anyone who&amp;rsquo;s worked on custom themes, be they just simple static color schemes, or allowing the user to customize each facet of the application, knows how importent your markup &amp;amp; CSS structure is in such a case. And as you can imagine it took us a while to rework the UI, to become &lt;em&gt;themable&lt;/em&gt;, moving forward carefully to not cause any UI regressions.&lt;/p&gt;
+
+&lt;p&gt;Even though it took some time, in the end all went well. We managed to rework the codebase to align it with the desired functionality, and plugged in the &lt;em&gt;night mode&lt;/em&gt; color values and voila. A pleasant dark theme, that&amp;rsquo;s easy on the eyes.&lt;/p&gt;
+
+&lt;p&gt;
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;mode-light.png&#34; &gt;
+
+&lt;img src=&#34;mode-light.png&#34; alt=&#34;Light mode theme&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Light mode&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;mode-dark.png&#34; &gt;
+
+&lt;img src=&#34;mode-dark.png&#34; alt=&#34;Light mode theme&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Dark mode&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Even we, as a team were happy, since looking at the platform for a sizeable portion of the day, was much more pleasant.&lt;/p&gt;
+
+&lt;h2 id=&#34;copytrading&#34;&gt;Copytrading&lt;/h2&gt;
+
+&lt;p&gt;An exciting time came along at one point, when our client came to us with their first functional feature request: &lt;strong&gt;Copytrading&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sounds fancy. So what is that?&lt;/p&gt;
+
+&lt;p&gt;Essentially the Idea is that certain investors can make their profiles public, allowing you to see their trading data i.e. what positions they have currently open, when they opened them, etc. You could then &lt;em&gt;follow&lt;/em&gt; these traders, and what would happen is that you would start mirroring the positions they open and close from here on. The idea being, that if you have someone that consistently demonstrates profit over a longer period of time, you could follow them and trust that they know what they&amp;rsquo;re doing, as they probably wouldn&amp;rsquo;t want to make bad investments themselves, and therefore net an easier, lower-risk profit.&lt;/p&gt;
+
+&lt;p&gt;We started development on it and after a couple of months of working together with the off-site backend team, to coordinate the API we managed to deliver what I would call a very successful implementation. You can view some of the related UI below.&lt;/p&gt;
+
+&lt;div class=&#34;copytrading-gallery&#34;&gt;
+  
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;copytrading-profile.png&#34; &gt;
+
+&lt;img src=&#34;copytrading-profile.png&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Profile details of a single trader&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+  
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;copytrading-sidebar.png&#34; &gt;
+
+&lt;img src=&#34;copytrading-sidebar.png&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;List of traders&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;in-the-end&#34;&gt;In the end&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;It was an interesting journey. It had it&amp;rsquo;s ups and downs, but there was definitely a lot to learn from it, and learn we did. I beleive our team did a great job throughout: Analyzing the issues, picking the right tools and development approaches for the job, delivering competent solutions, aligned with the client&amp;rsquo;s needs, and ultimately fostering a healthy client-provider relationship.&lt;/p&gt;
+
+&lt;style&gt;
+  .phone-gallery {
+    box-sizing: border-box;
+  }
+
+  .phone-gallery__content {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: thin;
+  }
+
+  .phone-gallery figure:not(:last-of-type) {
+    margin-right: 0.5rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .phone-gallery figure {
+    display: inline-block;
+    border: 10px solid #010101;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .phone-gallery figure img {
+    height: 420px;
+  }
+
+  .copytrading-gallery {
+    display: flex;
+  }
+
+  .copytrading-gallery figure {
+    margin-top: 1rem !important;
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+&lt;/style&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,42 +3,94 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/blog/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
+    <loc>/tags/angular.js/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/blog/my-first-post/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://momchil-anachkov.github.io/blog/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
+    <loc>/tags/cordova/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/tags/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
+    <loc>/tags/front-end-development/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/tags/interesting/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
+    <loc>/tags/hybrid-apps/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/tags/post/</loc>
-    <lastmod>2019-06-13T12:06:35+03:00</lastmod>
+    <loc>/tags/integration/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://momchil-anachkov.github.io/blog/categories/</loc>
+    <loc>/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/forex-trading-platform/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/theming/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ui-development/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/momchil-anachkov/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
     <priority>0</priority>
   </url>
   
