@@ -27,26 +27,26 @@
 
 &lt;h2 id=&#34;supporting-the-already-established-code-base&#34;&gt;Supporting the already established code-base.&lt;/h2&gt;
 
-&lt;p&gt;The guys had already released the platform, but as with any software product, shipping is just half the battle. Once you get that large flow of users, you need a dedicated team to iron out issues, impossible to catch on a smaller testing scale. Our team was tasked with handling defect resolution, and in the meantime aligning the code-base with established best practices.&lt;/p&gt;
+&lt;p&gt;The guys had already released the platform, but as with any software product, shipping is only half the battle. Once you get that large flow of users, you need a dedicated team to iron out issues, impossible to catch on a smaller testing scale. We were tasked with handling defect resolution, and in the meantime aligning the code-base with established best practices.&lt;/p&gt;
 
-&lt;p&gt;Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we&amp;rsquo;re talking about a large-scale project, such as a trading platform. Luckily we had solid experience with the technology stack used: Node.js, NPM, Grunt along with Angular.js. So after a couple of introductory weeks filled with onboarding regarding functional requirements, and another couple for getting acquainted with the project architecture, we were confident enough to start making refactoring, and stabilization changes, without too much worry about regressions. We were off to a great start.&lt;/p&gt;
+&lt;p&gt;Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we&amp;rsquo;re talking about a large-scale project, such as a trading platform. Luckily we had solid experience with the technology stack used: Node.js, NPM, Grunt along with Angular.js. So after a couple of introductory weeks filled with onboarding about functional requirements, and another couple for getting acquainted with the project architecture, we were confident enough to start making refactoring, and stabilization changes, without too much worry about regressions. We were off to a great start.&lt;/p&gt;
 
 &lt;h2 id=&#34;developing-an-ios-and-android-app&#34;&gt;Developing an iOS and Android app&lt;/h2&gt;
 
-&lt;p&gt;In this day and age everyone&amp;rsquo;s time is quite valuable. People have so many things to keep track and take care of throughout the day. Many users want the ability to accomplish tasks on the go. This is partially the reason many website development strategies embrace the mobile-first approach. Because the stats (TODO: add stats) show that &lt;em&gt;most website traffic comes from mobile devices&lt;/em&gt;: tablets, phones and the like. This is exactly why our clients accurately deduced that they require a moblie version of their platform. And for a product that expects frequent use from single users, a dedicated iOS &amp;amp; Android app makes perfect sense.&lt;/p&gt;
+&lt;p&gt;In this day and age everyone&amp;rsquo;s time is quite valuable. People have so many things to keep track and take care of throughout the day. Many users want the ability to carry out tasks on the go. This is the main reason many website development strategies embrace the mobile-first approach. Because &lt;a href=&#34;http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide&#34; target=&#34;_blank&#34;&gt;stats show that &lt;em&gt;most website traffic comes from mobile devices&lt;/em&gt;&lt;/a&gt;: tablets, phones and the like. This is exactly why our clients accurately deduced that they need a moblie version of their platform. And for a product that expects frequent use from single users, a dedicated iOS &amp;amp; Android app makes perfect sense.&lt;/p&gt;
 
 &lt;p&gt;So we took some time to research potential options. Let&amp;rsquo;s go over them.&lt;/p&gt;
 
 &lt;h4 id=&#34;developing-a-native-app-for-each-platform-one-in-swift-for-ios-one-in-java-for-android&#34;&gt;Developing a native App for each platform. One in Swift (for iOS), one in Java (for Android)&lt;/h4&gt;
 
-&lt;p&gt;Obviously the baseline approach was to write two applications. One for iDevice and one for Android users. This had a few hefty implications however.&lt;/p&gt;
+&lt;p&gt;Obviously the baseline approach was to write two applications. One for iDevice and one for Android users. This had some hefty implications.&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Twice the codebase.&lt;/strong&gt; Every feature set would have to be implemented twice, tested twice, and maintained twice. While for a larger company this could be a potential option, due to the performance benefits of this approach, this large workload was something that would hevily affect tangible progress and the speed at which we could deliver.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Platform-specific team capability.&lt;/strong&gt; While we were well-versed in web development including many of it&amp;rsquo;s flavors, mobile app development was hardly our forte. We would have to dedicate additional time for knowledge aqcuisition, and learn on the go, and while this is &lt;em&gt;technically&lt;/em&gt; possible it would definitely affect deadlines and time-to-resolution in case of issues arising.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform-specific team capability.&lt;/strong&gt; While we were well-versed in web development including many of it&amp;rsquo;s flavors, mobile app development was hardly our forte. We would have to dedicate extra time for knowledge acquisition, and learn on the go. While this is &lt;em&gt;technically&lt;/em&gt; possible it would definitely affect deadlines and time-to-resolution in case of issues arising.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;All in all, this route had some major drawbacks so we decided to keep looking for alternatives, hopefully finding something better suited.&lt;/p&gt;
+&lt;p&gt;All in all, this route had some major drawbacks so we decided to keep looking for alternatives in hope of finding something better suited.&lt;/p&gt;
 
 &lt;h4 id=&#34;turning-the-mobile-version-of-the-platform-into-a-progressive-web-app&#34;&gt;Turning the mobile version of the platform into a Progressive Web App&lt;/h4&gt;
 
@@ -56,22 +56,22 @@
 
 &lt;h4 id=&#34;developing-a-hybrid-app&#34;&gt;Developing a hybrid app&lt;/h4&gt;
 
-&lt;p&gt;And in comes the saving grace. While at the time, there were, and still are some issues with things like Cordova, Ionic and the like, it was the best fit for our case. The mobile version of the trading platform was already written and stable (👏). This meant that we could for the most part just &lt;em&gt;wrap&lt;/em&gt; the existing platform and go from there. There were many benefits to this.&lt;/p&gt;
+&lt;p&gt;And in comes the saving grace. While at the time, there were, and still are some issues with things like Cordova, Ionic and the like, it was the best fit for our case. The mobile version of the trading platform was already written and stable (👏). This meant that we could for the most part &lt;em&gt;wrap&lt;/em&gt; the existing platform and go from there. There were many benefits to this.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;This required minimal effort.&lt;/strong&gt; Relative to the native approach, the time that would be required to do this was miniscule. That meant that once we managed to package the web platform in a Cordova application we would have a stable base to move forward from.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;We inherit all of the app design.&lt;/strong&gt; Already existing users wouldn&amp;rsquo;t have to learn a different UI to do the things they already knew how to do in their mobile workflow.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Less code to maintain.&lt;/strong&gt; Since Cordova apps are in essence web pages, presented in a native web view. We could reuse the codebase throughout all the platforms. That means that there wouldn&amp;rsquo;t have to be seperate people maintaining the app for an Android and iOS device, and even more than that&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;This required minimal effort.&lt;/strong&gt; Relative to the native approach, the time that would be required to do this was minuscule. That meant that once we managed to package the web platform in a Cordova application we would have a stable base to move forward from.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;We inherit all of the app&amp;rsquo;s design.&lt;/strong&gt; Existing users wouldn&amp;rsquo;t have to learn a different UI to do the things they already knew how to do in their mobile workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Less code to maintain.&lt;/strong&gt; Since Cordova apps are in essence web pages, presented in a native web view, we could reuse the codebase throughout all the platforms. That means that there wouldn&amp;rsquo;t have to be seperate people maintaining the app for an Android and iOS device, and even more than that&amp;hellip;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Changes to the code would be reflected across all platforms.&lt;/strong&gt; Since we&amp;rsquo;re using the same code base, once we develop a new feature, or fix an existing issue, that change could be pushed everywhere. Users of one platform wouldn&amp;rsquo;t have to wait for updates, already available on another one. This was quite important as we already knew there was a &lt;a href=&#34;#redesigning-the-mobile-app-and-website&#34;&gt;design overhaul&lt;/a&gt; looming in the near future.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;We were extremely happy to have found a development strategy and stack that was so promising for our use-case. 🥳 This was not to say that the implementation was simple. As anyone familiar with Cordova, knows there are rules you have to obey, as there are with any framework. There is a very specific project structure, that you have to follow, and that meant we had to rework parts of the already existing workflow so that all modules of the project can integrate successfuly and play nice with each other. Nevertheless after a few days of overview, analysis, and planning how the integration would play out, we started the restructuring process. After about a month of work, module by module we successfully integrated the platform into a working hybrid mobile application. 🚀&lt;/p&gt;
+&lt;p&gt;We were extremely happy to have found a development strategy and stack that was so promising for our use-case. 🥳 This was not to say that the implementation was simple. As anyone familiar with Cordova, knows there are rules you have to obey, as there are with any framework. There is a very specific project structure, that you have to follow, and that meant we had to rework parts of the existing workflow so that all modules of the project can integrate successfuly and play nice with each other. Still, after a few days of overview, analysis, and planning how the integration would play out, we started restructuring things. After about a month of work, module by module, we successfully integrated the platform into a working hybrid mobile application. 🚀&lt;/p&gt;
 
 &lt;p&gt;We were now ready to start working on feature requests!&lt;/p&gt;
 
 &lt;h2 id=&#34;redesigning-the-mobile-app-and-website&#34;&gt;Redesigning the mobile app and website&lt;/h2&gt;
 
-&lt;p&gt;While the platform was fully functional, along with the newly packaged mobile app, some time had passed, since release and as such the design had become a little outdated. And so they came to us with a request:&lt;/p&gt;
+&lt;p&gt;While the platform was fully functional, along with the newly packaged mobile app, some time had passed, since release. As such, the design had become a little outdated. And so they came to us with a request:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;We a new design in the works and we would like you guys to work with us on it&amp;rsquo;s implementation.&lt;/p&gt;
@@ -79,7 +79,7 @@
 
 &lt;p&gt;Fantastic!&lt;/p&gt;
 
-&lt;p&gt;For about the next month we worked closely with our client&amp;rsquo;s designer to work out the details. As with any initial design, there were a few edge cases to iron out due to the dynamic nature of the app. I&amp;rsquo;m very happy to say that the redesign was quite successful and went very smoothly, and I&amp;rsquo;m also happy to share the end result of some of that work with you. Take a look below.&lt;/p&gt;
+&lt;p&gt;For about the next month we worked closely with our client&amp;rsquo;s designer to work out the details. As with any initial design, there were a few edge cases to iron out due to the dynamic nature of the app. I&amp;rsquo;m delighted to say that the redesign was quite successful and went very smoothly. I&amp;rsquo;m also happy to share the end result of some of that work with you. Take a look below.&lt;/p&gt;
 
 &lt;div class=&#34;phone-gallery&#34;&gt;
   &lt;div class=&#34;phone-gallery__content&#34;&gt;
@@ -175,7 +175,7 @@
 
 &lt;p&gt;&amp;hellip; or so we thought.&lt;/p&gt;
 
-&lt;p&gt;Sadly the UI of the platform was not developed with theming in mind. I&amp;rsquo;m sure anyone who&amp;rsquo;s worked on custom themes, be they just simple static color schemes, or allowing the user to customize each facet of the application, knows how importent your markup &amp;amp; CSS structure is in such a case. And as you can imagine it took us a while to rework the UI, to become &lt;em&gt;themable&lt;/em&gt;, moving forward carefully to not cause any UI regressions.&lt;/p&gt;
+&lt;p&gt;Sadly the UI of the platform was not developed with theming in mind. I&amp;rsquo;m sure anyone who&amp;rsquo;s worked on custom themes, be they simple static color schemes, or allowing the user to customize each facet of the application, knows how important your markup &amp;amp; CSS structure is in such a case. And as you can imagine it took us a while to rework the UI, to become &lt;em&gt;themable&lt;/em&gt;, moving forward with care not to cause any UI regressions.&lt;/p&gt;
 
 &lt;p&gt;Even though it took some time, in the end all went well. We managed to rework the codebase to align it with the desired functionality, and plugged in the &lt;em&gt;night mode&lt;/em&gt; color values and voila. A pleasant dark theme, that&amp;rsquo;s easy on the eyes.&lt;/p&gt;
 
@@ -230,7 +230,7 @@
 
 &lt;p&gt;Sounds fancy. So what is that?&lt;/p&gt;
 
-&lt;p&gt;Essentially the Idea is that certain investors can make their profiles public, allowing you to see their trading data i.e. what positions they have currently open, when they opened them, etc. You could then &lt;em&gt;follow&lt;/em&gt; these traders, and what would happen is that you would start mirroring the positions they open and close from here on. The idea being, that if you have someone that consistently demonstrates profit over a longer period of time, you could follow them and trust that they know what they&amp;rsquo;re doing, as they probably wouldn&amp;rsquo;t want to make bad investments themselves, and therefore net an easier, lower-risk profit.&lt;/p&gt;
+&lt;p&gt;The idea is that certain investors can make their profiles public, allowing you to see their trading data i.e. what positions they have currently open, when they opened them, etc. You could then &lt;em&gt;follow&lt;/em&gt; these traders, and what would happen is that you would start mirroring the positions they open and close from here on. The idea being, that if you have someone that consistently demonstrates profit over a longer period of time, you could follow them and trust that they know what they&amp;rsquo;re doing, as they probably wouldn&amp;rsquo;t want to make bad investments themselves, and therefore net an easier, lower-risk profit.&lt;/p&gt;
 
 &lt;p&gt;We started development on it and after a couple of months of working together with the off-site backend team, to coordinate the API we managed to deliver what I would call a very successful implementation. You can view some of the related UI below.&lt;/p&gt;
 
@@ -281,7 +281,7 @@
 
 &lt;h2 id=&#34;in-the-end&#34;&gt;In the end&amp;hellip;&lt;/h2&gt;
 
-&lt;p&gt;It was an interesting journey. It had it&amp;rsquo;s ups and downs, but there was definitely a lot to learn from it, and learn we did. I beleive our team did a great job throughout: Analyzing the issues, picking the right tools and development approaches for the job, delivering competent solutions, aligned with the client&amp;rsquo;s needs, and ultimately fostering a healthy client-provider relationship.&lt;/p&gt;
+&lt;p&gt;It was an interesting journey. It had it&amp;rsquo;s ups and downs, but there was definitely a lot to learn from it, and learn we did. Our team did a great job throughout: Analyzing the issues, picking the right tools and development approaches for the job, delivering competent solutions, aligned with the client&amp;rsquo;s needs, and ultimately fostering a healthy client-provider relationship.&lt;/p&gt;
 
 &lt;style&gt;
   .phone-gallery {
