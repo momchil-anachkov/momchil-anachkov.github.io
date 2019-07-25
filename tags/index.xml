@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Momchil Anachkov</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 10:06:34 +0300</lastBuildDate>
     
 	    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Desktop Application Development</title>
+      <link>/tags/desktop-application-development/</link>
+      <pubDate>Wed, 24 Jul 2019 10:06:34 +0300</pubDate>
+      
+      <guid>/tags/desktop-application-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electron</title>
+      <link>/tags/electron/</link>
+      <pubDate>Wed, 24 Jul 2019 10:06:34 +0300</pubDate>
+      
+      <guid>/tags/electron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>/tags/node.js/</link>
+      <pubDate>Wed, 24 Jul 2019 10:06:34 +0300</pubDate>
+      
+      <guid>/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI Development</title>
+      <link>/tags/ui-development/</link>
+      <pubDate>Wed, 24 Jul 2019 10:06:34 +0300</pubDate>
+      
+      <guid>/tags/ui-development/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Angular.js</title>
@@ -62,15 +98,6 @@
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/theming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UI Development</title>
-      <link>/tags/ui-development/</link>
-      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ui-development/</guid>
       <description></description>
     </item>
     
