@@ -179,7 +179,7 @@
 
 &lt;p&gt;Even though it took some time, in the end all went well. We managed to rework the codebase to align it with the desired functionality, and plugged in the &lt;em&gt;night mode&lt;/em&gt; color values and voila. A pleasant dark theme, that&amp;rsquo;s easy on the eyes.&lt;/p&gt;
 
-&lt;p&gt;
+
 
 
 
@@ -206,6 +206,7 @@
 
 
 
+
 &lt;figure&gt;
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;mode-dark.png&#34; &gt;
@@ -220,7 +221,7 @@
 &lt;/figcaption&gt;
 
 &lt;/figure&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;Even we, as a team were happy, since looking at the platform for a sizeable portion of the day, was much more pleasant.&lt;/p&gt;
 
@@ -286,6 +287,8 @@
 &lt;style&gt;
   .phone-gallery {
     box-sizing: border-box;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .phone-gallery__content {
@@ -296,15 +299,16 @@
 
   .phone-gallery figure:not(:last-of-type) {
     margin-right: 0.5rem;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .phone-gallery figure {
     display: inline-block;
     border: 10px solid #010101;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .phone-gallery figure img {
