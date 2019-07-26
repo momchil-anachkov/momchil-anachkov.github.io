@@ -160,7 +160,7 @@ As development moved along, we noticed some extra quality of life improvements t
 &lt;p&gt;While the platform was fully functional, along with the newly packaged mobile app, some time had passed, since release. As such, the design had become a little outdated. And so they came to us with a request:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;We a new design in the works and we would like you guys to work with us on it&amp;rsquo;s implementation.&lt;/p&gt;
+&lt;p&gt;We have a new design in the works and we would like you guys to work with us on it&amp;rsquo;s implementation.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Fantastic!&lt;/p&gt;
@@ -179,7 +179,7 @@ As development moved along, we noticed some extra quality of life improvements t
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;phone-1.jpg&#34; &gt;
 
-&lt;img src=&#34;phone-1.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;img src=&#34;phone-1.jpg&#34; alt=&#34;A list of a user&amp;#39;s favorited quotes&#34; &gt;
 &lt;/a&gt;
 
 &lt;/figure&gt;
@@ -194,7 +194,7 @@ As development moved along, we noticed some extra quality of life improvements t
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;phone-2.jpg&#34; &gt;
 
-&lt;img src=&#34;phone-2.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;img src=&#34;phone-2.jpg&#34; alt=&#34;A detailed, charted view of a commodity&#34; &gt;
 &lt;/a&gt;
 
 &lt;/figure&gt;
@@ -209,7 +209,7 @@ As development moved along, we noticed some extra quality of life improvements t
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;phone-3.jpg&#34; &gt;
 
-&lt;img src=&#34;phone-3.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;img src=&#34;phone-3.jpg&#34; alt=&#34;A list of a user&amp;#39;s open orders&#34; &gt;
 &lt;/a&gt;
 
 &lt;/figure&gt;
@@ -224,7 +224,7 @@ As development moved along, we noticed some extra quality of life improvements t
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;phone-4.jpg&#34; &gt;
 
-&lt;img src=&#34;phone-4.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;img src=&#34;phone-4.jpg&#34; alt=&#34;A history of all the user&amp;#39;s orders&#34; &gt;
 &lt;/a&gt;
 
 &lt;/figure&gt;
@@ -239,7 +239,7 @@ As development moved along, we noticed some extra quality of life improvements t
 
   &lt;a data-fancybox=&#34;&#34; href=&#34;phone-5.jpg&#34; &gt;
 
-&lt;img src=&#34;phone-5.jpg&#34; alt=&#34;Profile details of a single trader&#34; &gt;
+&lt;img src=&#34;phone-5.jpg&#34; alt=&#34;A list of a user&amp;#39;s previous orders, along with profits/losses&#34; &gt;
 &lt;/a&gt;
 
 &lt;/figure&gt;
